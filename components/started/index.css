@@ -1,0 +1,50 @@
+.started{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.started > div {
+    flex-basis: 50%;
+}
+
+.started > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .started {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .started > div {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* started feature */
+.started-feature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.started-feature .child {
+    display: grid;
+    flex-basis: 300px;
+    gap: 17.78px;   
+}
+
+.started-feature .child img {
+    object-fit: cover;
+}
+
+/* stopped started feature */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Component</title>
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <section>
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h3>upages.xyz</h3>
+                </div>
+
+                <div class="mobile-wrapper">
+                    <div>
+                        <h3>upages.xyz</h3>
+                    </div>
+                    
+                    <div>
+                        <button class="mobile-menu"></button>
+                    </div>
+                </div>
+
+                
+                <div class="flex-wrap">
+                    <!-- nav items -->
+                    <div class="nav-items">
+                        <ul>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Enterprise</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Resources</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <span class="divider"></span>
+
+
+                    <!-- nav buttons -->
+                    <div class="nav-buttons">
+                        <button class="button secondary-button">Action</button>
+                        <button class="button primary-button">Action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+    <style>
+        nav {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background-color: var(--white);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-wrapper .flex-wrap {
+            gap: 30px;
+        }
+
+        .nav-wrapper .flex-wrap .nav-items {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .nav-wrapper .flex-wrap .nav-items a {
+            all: unset;
+        }
+
+        .nav-wrapper .flex-wrap .nav-items ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .nav-wrapper .flex-wrap .nav-items ul li {
+            list-style: none;
+        }
+
+
+        /* nav buttons */
+        .nav-wrapper .flex-wrap .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-wrapper .flex-wrap .nav-buttons button {
+            width: auto;
+            padding: 0 20px;
+        }
+
+        .divider {
+            border-left: 1px solid var(--nav-separator-color); height: 45px
+        }
+
+        .mobile-wrapper {
+            display: none;
+        }
+       
+
+        .mobile-menu {
+            background-image: url('../../assets/icons/hamburger.svg');
+            height: 40px;
+            width: 40px;
+            border: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: none;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .mobile-wrapper {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            nav {
+                height: 100%;
+                display: grid;
+                gap: 10px;
+                align-items: center;
+                background-color: var(--white);
+                padding: 20px 0px;
+            }
+            
+            .nav-wrapper {
+                /* display: grid; */
+                gap: 30px;
+            }
+
+            .nav-wrapper .flex-wrap {
+                display: grid;
+                width: 100%;
+            }
+
+            .nav-wrapper .flex-wrap .nav-items ul {
+                display: grid;
+                gap: 20px;
+            }
+
+            .nav-wrapper .flex-wrap .nav-items ul li {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .nav-wrapper .flex-wrap .nav-buttons {
+                display: grid;
+            }
+
+            .divider {
+                display: none;
+            }
+        }
+
+       
+
+    </style>
+</body>
+</html>

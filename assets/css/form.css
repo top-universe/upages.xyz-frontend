@@ -1,0 +1,42 @@
+button {
+    padding: 10.6667px 17.7778px;
+    width: 156.56px;
+    height: 43.33px;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.secondary-action-button {
+    color: var(--primary);
+    background-color: var(--primary-button-background);
+}
+
+.primary-button {
+    color: var(--white);
+    background: var(--primary);
+    border: 0.888889px solid var(--secondary-button-background);
+}
+
+.secondary-button {
+    color: var(--primary);
+    background: var(--white);
+    border: 0.888889px solid var(--secondary-button-background);
+}
+
+.border {
+    border: 1px solid var(--primary);    
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* form */
+form {
+
+}

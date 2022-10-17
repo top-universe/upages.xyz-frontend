@@ -1,0 +1,69 @@
+@import url("./variables.css");
+@import url("./font.css");
+@import url("./feel.css");
+@import url("./utility.css");
+@import url("./form.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+}
+
+
+p {
+    color: #737373;
+}
+
+a,p,span {
+    font-family: var(--font-family);
+    font-size: 14.2222px;
+    line-height: 21px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 17.7778px;
+    line-height: 25px;    
+    letter-spacing: -0.02em;
+    color: #171717;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #E5E5E5;
+
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    place-items: center;
+}

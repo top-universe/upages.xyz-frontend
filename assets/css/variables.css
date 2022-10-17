@@ -1,0 +1,18 @@
+:root {
+    --font-family: 'Inter', sans-serif;
+    /* colors */
+    --primary: #6366F1;
+    --nav-separator-color: #D4D4D4;
+
+    /* buttons */
+    --primary-button-background: #EEF2FF ;
+    --secondary-button-background: #E5E5E5;
+
+
+    /* border radius */
+    --border-radius: 5px;
+
+    /* colors */
+    --white: white;
+    --red: red;
+}
